@@ -1,25 +1,55 @@
 {
     "name"  : "Zacky Kharboutli",
-    "Objective" :"My objectives are my biggest secrets",
-    "Languages": 
+    "dateOfBirth" : "1990-01-24",
+    "title": "this is my title",
+    "contacts":
+    {"email" : "casd@sdsad.com"
+    ,"phoneNR ": 3123131},
+    "objective" :"My objectives are my biggest secrets",
+    "languages": 
     [
-        {"name" :"Swedish" },
-        {"name" : "English"}
+        {"name" :"Swedish" , "level" : " begginer"},
+        {"name" : "English", "level " :" expert "}
     ],
-    "INTERESTS" : 
+
+    "skills": 
+    [
+        {"name" :"Java" , "level" : "begginer "},
+        {"name" : "Java script", "level " : " expert"}
+    ],
+
+    "interests" : 
     [
         {"name": "running" }
     ],
-    "Address": " this is my address",
-    "title": "this is my title",
-    "contacts":[
-        {"email" : "casd@sdsad.com"},
-        {"phoneNR ": 3123131}
 
-    ],
-    "experince" : " this is my experice",
-    "skills":" these are my skills ",
-    "Education" :""
+    "address": " this is my address",
+   
+    "experince" : [
+        {
+            "startDate":"2019",
+            "endDate": "now",
+            "position":"Fullstack Java-utvikler",
+            "employer":"Experis Academy",
+            "workDescription":" this what i have done",
+            "location": "Sweden"
+        }
+    ]
+    
+    
+        
+    ,
+    "education" :[
+        {
+            "startDate":"2016",
+            "endDate": "2019",
+            "subject":"Software eng",
+            "university":"Lnu ",
+            "description":" this what i have studied",
+            "location": "Sweden"
+        }
+    ]
+    
 }
 
 

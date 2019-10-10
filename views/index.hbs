@@ -1,33 +1,68 @@
 <h1>Main page</h1>
 <p>here</p>
 <h3>Name : {{name}}</h3>
-<h3>objective : {{Objective}}</h3>
-<h3>Languages :
-    {{#if Languages}}
-    {{#each Languages}}
+<h3>title : {{title}}</h3>
+<h3>Birth date : {{dateOfBirth}}</h3>
+<h3>objective : {{objective}}</h3>
+<h3>Address : {{address}}</h3>
 
-    {{this.name}}   
+<h3>contacts  </h3>
+    <h4> Email :{{contacts.email}} </h2>
+    <h4>Phone nr  : {{contacts.phoneNR}}</h4>
 
+<h3>Languages 
+    {{#if languages}}
+    {{#each languages}}
+<p>{{this.name }}  : {{this.level}}  </p>
+    {{/each}}
+    {{/if}}
+</h3>
+
+
+<h3>Skills 
+    {{#if skills}}
+    {{#each skills}}
+<p>{{this.name }}  : {{this.level}}  </p>
     {{/each}}
     {{/if}}
 </h3>
 
 <h3>Interests:
-    {{#if INTERESTS}}
-    {{#each INTERESTS}}
+    {{#if interests}}
+    {{#each interests}}
 
     {{this.name}}
-    
+
     {{/each}}
     {{/if}}
 </h3>
 
-<h3>Address : {{Address}}</h3>
-<h3>title : {{title}}</h3>
 
-<h3>contacts : </h3>
-    <h4> Email :{{contacts}} </h2>
+<h3>Experinces</h3>
+ {{#if experince}}
+    {{#each experince}}
+
+    <p>Start : {{this.startDate}}</p>
+    <p>End : {{this.endDate}}</p>
+    <p>Location : {{this.location}}</p>
+    <p>Position : {{this.position}}</p>
+    <p>Employer : {{this.employer}}</p>
+    <p>Description : {{this.workDescription}}</p>
+
+    {{/each}}
+    {{/if}}
 
 
-<h3>experince : {{experince}}</h3>
-<h3>skills : {{skills}}</h3>
+<h3>Educations</h3>
+ {{#if education}}
+    {{#each education}}
+
+    <p>Start : {{this.startDate}}</p>
+    <p>End : {{this.endDate}}</p>
+    <p>Location : {{this.location}}</p>
+    <p>Subject : {{this.subject}}</p>
+    <p>University : {{this.university}}</p>
+    <p>Description : {{this.description}}</p>
+
+    {{/each}}
+    {{/if}}
