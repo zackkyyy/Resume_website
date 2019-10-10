@@ -1,6 +1,6 @@
 {
     "name"  : "Zacky Kharboutli",
-    "Objective" :" dsa dads ",
+    "Objective" :"My objectives are my biggest secrets",
     "Languages": 
     [
         {"name" :"Swedish" },
@@ -8,16 +8,19 @@
     ],
     "INTERESTS" : 
     [
-        {"name": "" }
+        {"name": "running" }
     ],
-    "Address": " ",
-    "title": "",
+    "Address": " this is my address",
+    "title": "this is my title",
     "contacts":[
-        {"email" : ""},
-        {"phoneNR ": ""}
+        {"email" : "casd@sdsad.com"},
+        {"phoneNR ": 3123131}
 
     ],
-    "experince" : "",
-    "skills":" ",
+    "experince" : " this is my experice",
+    "skills":" these are my skills ",
     "Education" :""
 }
+
+
+

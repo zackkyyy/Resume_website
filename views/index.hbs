@@ -1,0 +1,33 @@
+<h1>Main page</h1>
+<p>here</p>
+<h3>Name : {{name}}</h3>
+<h3>objective : {{Objective}}</h3>
+<h3>Languages :
+    {{#if Languages}}
+    {{#each Languages}}
+
+    {{this.name}}   
+
+    {{/each}}
+    {{/if}}
+</h3>
+
+<h3>Interests:
+    {{#if INTERESTS}}
+    {{#each INTERESTS}}
+
+    {{this.name}}
+    
+    {{/each}}
+    {{/if}}
+</h3>
+
+<h3>Address : {{Address}}</h3>
+<h3>title : {{title}}</h3>
+
+<h3>contacts : </h3>
+    <h4> Email :{{contacts}} </h2>
+
+
+<h3>experince : {{experince}}</h3>
+<h3>skills : {{skills}}</h3>

@@ -2,9 +2,12 @@ var express = require('express');
 var router = express.Router();
 const data = require("../json/data")
 
-router.get("/" , function (req , res){
-    res.send("Hello world")
-})
+
+
+router.get('/', function(req, res, next) {
+    console.log(data)
+    res.render('index', data);
+  });
 router.get("/data", function(req, res){
     res.json(data)
 })
