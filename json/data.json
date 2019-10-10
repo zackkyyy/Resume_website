@@ -1,0 +1,23 @@
+{
+    "name"  : "Zacky Kharboutli",
+    "Objective" :" dsa dads ",
+    "Languages": 
+    [
+        {"name" :"Swedish" },
+        {"name" : "English"}
+    ],
+    "INTERESTS" : 
+    [
+        {"name": "" }
+    ],
+    "Address": " ",
+    "title": "",
+    "contacts":[
+        {"email" : ""},
+        {"phoneNR ": ""}
+
+    ],
+    "experince" : "",
+    "skills":" ",
+    "Education" :""
+}
