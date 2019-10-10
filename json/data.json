@@ -1,22 +1,29 @@
 {
-    "image" : "https://zackkyyy.github.io/img/avatar-min.png",
-    "name"  : "Zacky Kharboutli",
+    "image" : "/stylesheets/edi.jpg",
+    "name"  : "my name here",
     "dateOfBirth" : "1990-01-24",
-    "title": "this is my title",
-    "contacts":
-    {"email" : "casd@sdsad.com"
-    ,"phoneNR ": 3123131},
-    "objective" :"My objectives are my biggest secrets",
+    "title": "Full Stack Java Developer",
+    "contacts":{
+        "email" : "zacky-kh@hotmail.com" ,
+        "phoneNR ": 768654991
+},
+
+    "objective" :"TO OBTAIN PROFESSIONAL EXPERIENCE TO UTILIZE MY SKILLS AND KNOWLEDGE TO FURTHER DEVELOPE MY ABILITIES IN THE COMPUTER SCIENCE FIELD",
     "languages": 
     [
-        {"name" :"Swedish" , "level" : " begginer"},
-        {"name" : "English", "level" :" expert "}
+        {"name" :"Swedish" , "level" : "Begginer"},
+        {"name" : "English", "level" :"Fluent "},
+        {"name" : "Arabic"  , "level": "Nativ"}
     ],
 
     "skills": 
     [
         {"name" :"Java" , "level" : "begginer "},
-        {"name" : "Java script", "level" : " expert"}
+        {"name" : "Java script", "level" : " expert"},
+        {"name" :"NodeJs" , "level" : "begginer "},
+        {"name" : "Back end", "level" : " expert"},
+        {"name" :"Databases" , "level" : "begginer "},
+        {"name" : "API", "level" : " expert"}
     ],
 
     "interests" : 
@@ -24,9 +31,25 @@
         {"name": "running" }
     ],
 
-    "address": " this is my address",
+    "address": "address växjö 32413",
    
     "experince" : [
+        {
+            "startDate":"2019",
+            "endDate": "now",
+            "position":"Fullstack Java developer",
+            "employer":"Experis Academy",
+            "workDescription":" this what i have done",
+            "location": "Sweden"
+        },
+        {
+            "startDate":"2019",
+            "endDate": "now",
+            "position":"Fullstack Java developer",
+            "employer":"Experis Academy",
+            "workDescription":" this what i have done",
+            "location": "Sweden"
+        },
         {
             "startDate":"2019",
             "endDate": "now",
@@ -43,8 +66,24 @@
             "startDate":"2016",
             "endDate": "2019",
             "subject":"Software eng",
-            "university":"Lnu ",
-            "description":" this what i have studied",
+            "university":"Linneaus University ",
+            "description":"Software developement and Engineering courses ",
+            "location": "Sweden"
+        },
+        {
+            "startDate":"2016",
+            "endDate": "2019",
+            "subject":"Software eng",
+            "university":"Linneaus University ",
+            "description":"Software developement and Engineering courses ",
+            "location": "Sweden"
+        },
+        {
+            "startDate":"2016",
+            "endDate": "2019",
+            "subject":"Software eng",
+            "university":"Linneaus University ",
+            "description":"Software developement and Engineering courses ",
             "location": "Sweden"
         }
     ],

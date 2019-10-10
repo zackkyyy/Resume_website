@@ -1,17 +1,16 @@
 <!-- Heading -->
 
 
-
 <div class="row ">
     <div class="col-3" id="header">
 
         <header>
             <div class="containers">
-                <p style="text-align: center"><img src="{{image}}" alt="Zacky Kharboutli" style="width: 140px"
+                <p style="text-align: center"><img src="{{image}}" alt="Personal Image" style="width: 90%"
                         style="text-align: center"></p>
                 <nav class="contact">
                     <ul>
-                        <li><a href={{links.mail}}></a><i class="fa fa-envelope"></i></li>
+                        <li><a href= "mailto:{{links.mail}}"><i class="fa fa-envelope"></i></a></li>
                         <li><a href={{links.linkdin}}><i class="fa fa-globe"></i></a>
                         </li>
                         <li><a href={{links.github}} title="Github" target="_blank"><i class="fa fa-github"></i></a>
@@ -31,34 +30,12 @@
                         <li><a href="#side-projects">Side Projects</a></li>
                     </ul>
                 </nav>
-            </div>
-        </header>
 
-    </div>
-    <div class="col-8" style="padding-top:5%">
-        <div class="jambotron">
-              <h1 class="display-4 name" >&lt;{{name}} /&gt;</h1>
-        </div>
-      
-
-        <!-- Summary -->
-        <section id="summary" class="section ">
-            <div class="containers">
-                <h3>Summary</h3>
-                <p>{{title}}</p>
-                <p>
-                    {{objective}}
-                </p>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" class="section ">
+                        <!-- Skills -->
+        <section id="skills" class="">
             <div class="containers">
                 <h3>Skills</h3>
-
                 <section>
-
                     <ul>
                         {{#if skills}}
                         {{#each skills}}
@@ -70,6 +47,29 @@
 
             </div>
         </section>
+            </div>
+        </header>
+
+    </div>
+    <div class="col-8" style="padding-top:5%">
+        <div class="jambotron">
+            <h1 class="display-4 name">&lt;{{name}} /&gt;</h1>
+        </div>
+
+                <h2 style="text-align: center">{{title}}</h2>
+
+
+        <!-- Summary -->
+        <section id="summary" class="section ">
+            <div class="containers">
+                <h3>Summary</h3>
+                <p>
+                    {{objective}}
+                </p>
+            </div>
+        </section>
+
+
         <section class="section ">
             <div class="containers">
                 <h3>Languages</h3>
