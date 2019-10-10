@@ -29,7 +29,7 @@
 </header>
 
 <!-- Summary -->
-<section id="summary" class="section summary">
+<section id="summary" class="section ">
     <div class="container">
         <h2>Summary</h2>
         <p>{{title}}</p>
@@ -40,7 +40,7 @@
 </section>
 
 <!-- Skills -->
-<section id="skills" class="section skills">
+<section id="skills" class="section ">
     <div class="container">
         <h2>Skills</h2>
 
@@ -53,26 +53,21 @@
                 {{/if}}
             </ul>
 
-
-
-
-
-
-            <section class="skill">
-                <h2>Languages</h2>
-                <ul>
-                   {{#if languages}}
-                    {{#each languages}}
-                    <li>{{this.name }}  : {{this.level}}  </li>
-                    {{/each}}
-                    {{/if}}
-                </ul>
-            </section>
+        <section class="skill">
+            <h2>Languages</h2>
+            <ul>
+            {{#if languages}}
+                {{#each languages}}
+                <li>{{this.name }}  : {{this.level}}  </li>
+                {{/each}}
+                {{/if}}
+            </ul>
+        </section>
     </div>
 </section>
 
 <!-- Experience -->
-<section id="experience" class="section experience">
+<section id="experience" class="section">
     <div class="container">
         <h2>Experience</h2>
             {{#if experince}}
@@ -89,7 +84,7 @@
     </div>
 </section>
 <!-- Education -->
-<section id="education" class="section education">
+<section id="education" class="section">
     <div class="container">
         <h2>Education</h2>
         
