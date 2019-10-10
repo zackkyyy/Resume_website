@@ -1,6 +1,6 @@
 {
     "image" : "https://zackkyyy.github.io/img/avatar-min.png",
-    "name"  : "My name is here",
+    "name"  : "Zacky Kharboutli",
     "dateOfBirth" : "1990-01-24",
     "title": "this is my title",
     "contacts":
@@ -50,7 +50,7 @@
     ],
     "links": 
         {
-            "github" : "https://github.com/zackkyyy" ,
+            "github" : "https://github.com/zackkyyy",
             "linkdin": "https://www.linkedin.com/in/zacky-kharboutli-915b55b1",
             "mail" : "mailto:zacky-kh@live.com"
         }
