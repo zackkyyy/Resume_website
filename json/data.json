@@ -1,5 +1,6 @@
 {
-    "name"  : "Zacky Kharboutli",
+    "image" : "https://zackkyyy.github.io/img/avatar-min.png",
+    "name"  : "My name is here",
     "dateOfBirth" : "1990-01-24",
     "title": "this is my title",
     "contacts":
@@ -9,13 +10,13 @@
     "languages": 
     [
         {"name" :"Swedish" , "level" : " begginer"},
-        {"name" : "English", "level " :" expert "}
+        {"name" : "English", "level" :" expert "}
     ],
 
     "skills": 
     [
         {"name" :"Java" , "level" : "begginer "},
-        {"name" : "Java script", "level " : " expert"}
+        {"name" : "Java script", "level" : " expert"}
     ],
 
     "interests" : 
@@ -35,9 +36,7 @@
             "location": "Sweden"
         }
     ]
-    
-    
-        
+      
     ,
     "education" :[
         {
@@ -48,9 +47,11 @@
             "description":" this what i have studied",
             "location": "Sweden"
         }
-    ]
-    
+    ],
+    "links": 
+        {
+            "github" : "https://github.com/zackkyyy" ,
+            "linkdin": "https://www.linkedin.com/in/zacky-kharboutli-915b55b1",
+            "mail" : "mailto:zacky-kh@live.com"
+        }
 }
-
-
-

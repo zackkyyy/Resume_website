@@ -1,68 +1,126 @@
-<h1>Main page</h1>
-<p>here</p>
-<h3>Name : {{name}}</h3>
-<h3>title : {{title}}</h3>
-<h3>Birth date : {{dateOfBirth}}</h3>
-<h3>objective : {{objective}}</h3>
-<h3>Address : {{address}}</h3>
+<!-- Heading -->
 
-<h3>contacts  </h3>
-    <h4> Email :{{contacts.email}} </h2>
-    <h4>Phone nr  : {{contacts.phoneNR}}</h4>
+<header>
+    <div class="container">
+        <h1>&lt;{{name}} /&gt;</h1>
+        <p style="text-align: center"><img  src="{{image}}" alt="Zacky Kharboutli"  style="width: 140px" style="text-align: center"></p>
+        <nav class="contact">
+            <ul>
+                <li><a href={{links.mail}}></a><i class="fa fa-envelope"></i></li>
+                <li><a href={{links.linkdin}}><i class="fa fa-globe"></i></a>
+                </li>
+                <li><a href={{links.github}} title="Github" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </nav>
 
-<h3>Languages 
-    {{#if languages}}
-    {{#each languages}}
-<p>{{this.name }}  : {{this.level}}  </p>
-    {{/each}}
-    {{/if}}
-</h3>
+     
+
+        <nav class="sections">
+            <ul>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#side-projects">Side Projects</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Summary -->
+<section id="summary" class="section summary">
+    <div class="container">
+        <h2>Summary</h2>
+        <p>{{title}}</p>
+        <p>
+            {{objective}}
+        </p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section skills">
+    <div class="container">
+        <h2>Skills</h2>
+
+        <section class="skill">
+            <ul>
+                {{#if skills}}
+                {{#each skills}}
+                <li>{{this.name }} : {{this.level}} </li>
+                {{/each}}
+                {{/if}}
+            </ul>
 
 
-<h3>Skills 
-    {{#if skills}}
-    {{#each skills}}
-<p>{{this.name }}  : {{this.level}}  </p>
-    {{/each}}
-    {{/if}}
-</h3>
-
-<h3>Interests:
-    {{#if interests}}
-    {{#each interests}}
-
-    {{this.name}}
-
-    {{/each}}
-    {{/if}}
-</h3>
 
 
-<h3>Experinces</h3>
- {{#if experince}}
-    {{#each experince}}
-
-    <p>Start : {{this.startDate}}</p>
-    <p>End : {{this.endDate}}</p>
-    <p>Location : {{this.location}}</p>
-    <p>Position : {{this.position}}</p>
-    <p>Employer : {{this.employer}}</p>
-    <p>Description : {{this.workDescription}}</p>
-
-    {{/each}}
-    {{/if}}
 
 
-<h3>Educations</h3>
- {{#if education}}
-    {{#each education}}
+            <section class="skill">
+                <h2>Languages</h2>
+                <ul>
+                   {{#if languages}}
+                    {{#each languages}}
+                    <li>{{this.name }}  : {{this.level}}  </li>
+                    {{/each}}
+                    {{/if}}
+                </ul>
+            </section>
+    </div>
+</section>
 
-    <p>Start : {{this.startDate}}</p>
-    <p>End : {{this.endDate}}</p>
-    <p>Location : {{this.location}}</p>
-    <p>Subject : {{this.subject}}</p>
-    <p>University : {{this.university}}</p>
-    <p>Description : {{this.description}}</p>
+<!-- Experience -->
+<section id="experience" class="section experience">
+    <div class="container">
+        <h2>Experience</h2>
+            {{#if experince}}
+            {{#each experince}}
+        <section class="job">
+            <h3>{{this.employer}} <span class="date">{{this.startDate}} - {{this.endDate}}</span></h3>
+            <span class="title">{{this.position}}</span>
+            <p>
+            {{this.workDescription}}
+            </p>
+        </section>
+        {{/each}}
+        {{/if}}
+    </div>
+</section>
+<!-- Education -->
+<section id="education" class="section education">
+    <div class="container">
+        <h2>Education</h2>
+        
+            {{#if education}}
+            {{#each education}}
+        <section class="qualification">
+            <h3>{{this.subject}} <span class="date">{{this.startDate}} - {{this.endDate}}</span></h3>
+            <p>{{this.university}}</p>
+        </section>
+        {{/each}}
+        {{/if}}
+    </div>
+</section>
 
-    {{/each}}
-    {{/if}}
+
+
+
+<!-- Additional -->
+<!-- <section id="extra" class="section additional">
+            <div class="container">
+                <h2>Extra</h2>
+                <ul>
+                    <li>Full UK driver's license.</li>
+                </ul>
+            </div>
+        </section> -->
+
+<section class="section">
+    <div class="container">
+        <p class="quote">&ldquo;Generally, the craft of programming is the factoring of a set of requirements into a a
+            set of functions and data structures.&rdquo;</p>
+        <p class="quote">&ldquo;- Douglas Crockford -&rdquo;</p>
+    </div>
+</section>
