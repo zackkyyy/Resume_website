@@ -11,14 +11,26 @@
 </nav> -->
 
 
-<div class="container">
-
-
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light  sections" id="naviUp">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+     <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+    </ul>
+  </div>
+</nav>
 <div class="row" >
-    <div class="col-sm-4" id="header" >
-
+    <div class="col-sm-4" id="header"  >
+  
         <header  >
-            <div class="containers affix" >
+            <div class="containers" >
                 <p style="text-align: center"><img src="{{image}}" alt="Personal Image" style="width: 90%"
                         style="text-align: center"></p>
                 <nav class="contact">
@@ -31,7 +43,7 @@
                     </ul>
                 </nav>
 
-                <nav class="sections">
+                {{!-- <nav class="sections">
                     <ul>
                         <li><a href="#summary">Summary</a></li>
                         <li><a href="#skills">Skills</a></li>
@@ -40,11 +52,10 @@
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#side-projects">Side Projects</a></li>
                     </ul>
-                </nav>
-
+                </nav> --}}
                 <section class=" ">
-                    <div class="containers">
-                        <h3>Languages</h3>
+                    <div class="containers" >
+                        <h3><i class="fa fa-globe"></i> Languages</h3>
                         <section>
                             <ul>
                                 {{#if languages}}
@@ -68,16 +79,21 @@
     </div>
     <div class="col-sm-8">
             
-        <nav class="sections"  >
-                    <ul>
-                        <li><a href="#summary">Summary</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#experience" data-toggle="collapse" data-target="#sss">Experience</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#side-projects">Side Projects</a></li>
-                    </ul>
-                </nav>
+
+ <nav class="navbar navbar-expand-lg navbar-light  sections" id="naviDown">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+     <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+    </ul>
+  </div>
+</nav>
         <div class="jambotron" style="margin-top: 1%">
             <h1 class="display-4 name">&lt;{{name}} /&gt;</h1>
         </div>
@@ -100,7 +116,7 @@
         <!-- Skills -->
         <section id="skills" class="section Super light green overlay">
             <div class="containers">
-                <h3>Skills</h3>
+                <h3> <i class="fa fa-tasks"></i> Skills</h3>
                 <section>
                     {{#if skills}}
                     {{#each skills}}
@@ -119,7 +135,7 @@
                 <h3 data-toggle="collapse" data-target="#sss"> <i class="fa fa-suitcase"></i> Experience</h3>
                 {{#if experince}}
                 {{#each experince}}
-                <section class="job collapse" id="sss">
+                <section class="job " id="sss">
                     <h4>{{this.employer}} <span class="date">{{this.startDate}} - {{this.endDate}}</span></h4>
                     <span class="title">{{this.position}}</span>
                     <p><small> {{this.workDescription}} </small>
