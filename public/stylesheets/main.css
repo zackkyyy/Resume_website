@@ -117,6 +117,21 @@ body>section section {
     text-align: center;
 }
 
+.card {
+    margin-top: 2%;
+    margin-left: 10%;
+    text-align: left;
+    width: 80%;
+}
+
+.card i,
+.card h6{
+    color: #bababa;
+    line-height: 1%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
 .sections {
     text-align: center;
     margin:3em 0 1em 0;
@@ -214,6 +229,7 @@ section a {
 @media screen and (min-width : 0px) and (max-width :575px){
     #header {
         position: relative;
+        height: auto;
     }
 }
 
