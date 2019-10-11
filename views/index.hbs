@@ -30,7 +30,7 @@
     <div class="col-sm-4" id="header">
         <header  >
             <div class="containers" >
-                <p style="text-align: center"><img src="{{image}}" alt="Personal Image" style="width: 90%"
+                <p style="text-align: center"><img src="{{image}}" alt="Personal Image"
                         style="text-align: center"></p>
                 <nav class="contact">
                     <ul>
@@ -57,19 +57,9 @@
                     </h6>
                 </div>
 
-                {{!-- <nav class="sections">
-                    <ul>
-                        <li><a href="#summary">Summary</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#experience" data-toggle="collapse" data-target="#sss">Experience</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#side-projects">Side Projects</a></li>
-                    </ul>
-                </nav> --}}
-                <!-- <section class=" ">
+                <section class="">
                     <div class="containers" >
-                        <h3><i class="fa fa-globe"></i> Languages</h3>
+                        <h4 class="h4"><i class="fa fa-globe"></i> Languages</h4>
                         <section>
                             <ul>
                                 {{#if languages}}
@@ -109,7 +99,7 @@
   </div>
 </nav>
         <div class="jambotron" style="margin-top: 1%">
-            <h1 class="display-4 name">&lt;{{name}} /&gt;</h1>
+            <h1 class="display-4 name">&lt; {{name}} /&gt;</h1>
         </div>
 
         <h2 style="text-align: center">{{title}}</h2>
@@ -118,7 +108,7 @@
         <!-- Summary -->
         <section id="summary" class="section">
             <div class="containers">
-                <h3> <i class="fa fa-user-o"></i> Summary</h3>
+                <h4 class="h4"> <i class="fa fa-user-o"></i> Summary</h4>
                 <p>
                     {{objective}}
                 </p>
@@ -130,7 +120,7 @@
         <!-- Skills -->
         <section id="skills" class="section Super light green overlay">
             <div class="containers">
-                <h3> <i class="fa fa-tasks"></i> Skills</h3>
+                <h4 class="h4"> <i class="fa fa-tasks"></i> Skills</h4>
                 <section>
                     {{#if skills}}
                     {{#each skills}}
@@ -146,7 +136,7 @@
         <section id="experience" class="section">
             <div class="containers">
                 
-                <h3 data-toggle="collapse" data-target="#sss"> <i class="fa fa-suitcase"></i> Experience</h3>
+                <h4 class="h4" data-toggle="collapse" data-target="#sss"> <i class="fa fa-suitcase"></i> Experience</h4>
                 {{#if experince}}
                 {{#each experince}}
                 <section class="job " id="sss">
@@ -163,7 +153,7 @@
         <!-- Education -->
         <section id="education" class="section">
             <div class="containers">
-                <h3>  <i class="fa fa-graduation-cap"></i>  Education</h3>
+                <h4 class="h4">  <i class="fa fa-graduation-cap"></i>  Education</h4>
 
                 {{#if education}}
                 {{#each education}}
@@ -178,14 +168,26 @@
 
 
         <!-- Additional -->
-        <!-- <section  class="section ">
+         <section id="projects" class="section ">
             <div class="containers">
-                <h2>Extra</h2>
-                <ul>
-                    <li> driver's license.</li>
-                </ul>
+                 <h4 class="h4">  <i class="fa fa-wrench"></i>  Projects</h4>
+
+                {{#if projects}}
+                {{#each projects}}
+                <section class="projects">
+                    <h4 >{{this.title}} <span class="date">{{this.data}}</span></h4>
+                    <p>{{this.description}}</p>
+                     <p style="font-weight: bold">Technologies used in the project :</p>
+                    {{#each this.technologies}}
+                    <i> {{this}} &nbsp;&nbsp;</i>
+                    {{/each}}
+                    <br>
+                    <p><a href={{this.link}}>Link to the project</a></p>
+                </section>
+                {{/each}}
+                {{/if}}
             </div>
-        </section> -->
+        </section>
 
         <section class="">
             <div class="containers">

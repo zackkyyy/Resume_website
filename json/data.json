@@ -97,5 +97,14 @@
             "github" : "https://github.com/zackkyyy",
             "linkdin": "https://www.linkedin.com/in/zacky-kharboutli-915b55b1",
             "mail" : "mailto:zacky-kh@live.com"
+        },
+    "projects" : [
+        {
+            "title": "project title",
+            "date" : "2019",
+            "description" : " project description",
+            "technologies" : ["java script" , "html" , "css "],
+            "link" : "/"
         }
+    ]
 }
