@@ -126,6 +126,8 @@ body>section section {
 .card {
     margin-top: 2%;
     margin-left: 10%;
+    padding-left: 5%;
+    padding-top: 5%;
     text-align: left;
     width: 80%;
 }
@@ -133,9 +135,6 @@ body>section section {
 .card i,
 .card h6{
     color: #bababa;
-    line-height: 1%;
-    padding-left: 5%;
-    padding-top: 5%;
 }
 
 .sections {
@@ -232,7 +231,7 @@ section a {
   }
   
 
-@media screen and (min-width : 0px) and (max-width :575px){
+@media screen and (min-width : 0px) and (max-width :577px){
     #header {
         position: relative;
         height: auto;
