@@ -5,7 +5,6 @@ const data = require("../json/data")
 
 
 router.get('/', function(req, res, next) {
-    console.log(data)
     res.render('index', data);
   })
 router.get("/data", function(req, res){

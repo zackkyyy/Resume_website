@@ -1,16 +1,29 @@
 <!-- Heading -->
 
 
-<div class="row ">
-    <div class="col-3" id="header">
 
-        <header>
-            <div class="containers">
+ <!--
+<nav class="navbar navbar-dark bg-primary">
+  Navbar conten
+</nav>
+
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+</nav> -->
+
+
+<div class="container">
+
+
+<div class="row" >
+    <div class="col-sm-4" id="header" >
+
+        <header  >
+            <div class="containers affix" >
                 <p style="text-align: center"><img src="{{image}}" alt="Personal Image" style="width: 90%"
                         style="text-align: center"></p>
                 <nav class="contact">
                     <ul>
-                        <li><a href= "mailto:{{links.mail}}"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="mailto:{{links.mail}}"><i class="fa fa-envelope"></i></a></li>
                         <li><a href={{links.linkdin}}><i class="fa fa-globe"></i></a>
                         </li>
                         <li><a href={{links.github}} title="Github" target="_blank"><i class="fa fa-github"></i></a>
@@ -18,51 +31,64 @@
                     </ul>
                 </nav>
 
-
-
                 <nav class="sections">
                     <ul>
                         <li><a href="#summary">Summary</a></li>
                         <li><a href="#skills">Skills</a></li>
-                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#experience" data-toggle="collapse" data-target="#sss">Experience</a></li>
                         <li><a href="#education">Education</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#side-projects">Side Projects</a></li>
                     </ul>
                 </nav>
 
-                        <!-- Skills -->
-        <section id="skills" class="">
-            <div class="containers">
-                <h3>Skills</h3>
-                <section>
-                    <ul>
-                        {{#if skills}}
-                        {{#each skills}}
-                        <li>{{this.name }} : {{this.level}} </li>
-                        {{/each}}
-                        {{/if}}
-                    </ul>
+                <section class=" ">
+                    <div class="containers">
+                        <h3>Languages</h3>
+                        <section>
+                            <ul>
+                                {{#if languages}}
+                                {{#each languages}}
+                                <li>{{this.name }} : {{this.level}} </li>
+                                {{/each}}
+                                {{/if}}
+                            </ul>
+                        </section>
+
+
+                    </div>
                 </section>
 
-            </div>
-        </section>
+                <a href="/"><i class="fa fa-chevron-up" style="position: fixed"></i></a>
+               
+
             </div>
         </header>
 
     </div>
-    <div class="col-8" style="padding-top:5%">
-        <div class="jambotron">
+    <div class="col-sm-8">
+            
+        <nav class="sections"  >
+                    <ul>
+                        <li><a href="#summary">Summary</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience" data-toggle="collapse" data-target="#sss">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#side-projects">Side Projects</a></li>
+                    </ul>
+                </nav>
+        <div class="jambotron" style="margin-top: 1%">
             <h1 class="display-4 name">&lt;{{name}} /&gt;</h1>
         </div>
 
-                <h2 style="text-align: center">{{title}}</h2>
+        <h2 style="text-align: center">{{title}}</h2>
 
 
         <!-- Summary -->
-        <section id="summary" class="section ">
+        <section id="summary" class="section">
             <div class="containers">
-                <h3>Summary</h3>
+                <h3> <i class="fa fa-user-o"></i> Summary</h3>
                 <p>
                     {{objective}}
                 </p>
@@ -70,30 +96,30 @@
         </section>
 
 
-        <section class="section ">
+
+        <!-- Skills -->
+        <section id="skills" class="section Super light green overlay">
             <div class="containers">
-                <h3>Languages</h3>
+                <h3>Skills</h3>
                 <section>
-
-                    <ul>
-                        {{#if languages}}
-                        {{#each languages}}
-                        <li>{{this.name }} : {{this.level}} </li>
-                        {{/each}}
-                        {{/if}}
-                    </ul>
+                    {{#if skills}}
+                    {{#each skills}}
+                    <i> {{this.name }} &nbsp;&nbsp;</i>
+                    {{/each}}
+                    {{/if}}
                 </section>
-
 
             </div>
         </section>
+
         <!-- Experience -->
         <section id="experience" class="section">
             <div class="containers">
-                <h3>Experience</h3>
+                
+                <h3 data-toggle="collapse" data-target="#sss"> <i class="fa fa-suitcase"></i> Experience</h3>
                 {{#if experince}}
                 {{#each experince}}
-                <section class="job">
+                <section class="job collapse" id="sss">
                     <h4>{{this.employer}} <span class="date">{{this.startDate}} - {{this.endDate}}</span></h4>
                     <span class="title">{{this.position}}</span>
                     <p><small> {{this.workDescription}} </small>
@@ -107,7 +133,7 @@
         <!-- Education -->
         <section id="education" class="section">
             <div class="containers">
-                <h3>Education</h3>
+                <h3>  <i class="fa fa-graduation-cap"></i>  Education</h3>
 
                 {{#if education}}
                 {{#each education}}
@@ -121,19 +147,17 @@
         </section>
 
 
-
-
         <!-- Additional -->
-        <!-- <section id="extra" class="section additional">
+        <!-- <section  class="section ">
             <div class="containers">
                 <h2>Extra</h2>
                 <ul>
-                    <li>Full UK driver's license.</li>
+                    <li> driver's license.</li>
                 </ul>
             </div>
         </section> -->
 
-        <section class="section">
+        <section class="">
             <div class="containers">
                 <p class="quote">&ldquo;Generally, the craft of programming is the factoring of a set of requirements
                     into a a
@@ -145,4 +169,5 @@
 
     </div>
 
+</div>
 </div>

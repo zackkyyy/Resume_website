@@ -19,6 +19,19 @@ body {
 }
 
 
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 #header {
     background: linear-gradient(to top, rgb(94, 95, 97), rgb(9, 59, 73)); 
     box-shadow: -10px 25px 50px rgba(31, 39, 85, 0.3);
@@ -180,9 +193,44 @@ section a {
     border-radius:4px;
 
 }
+/**
+  .section:hover {
+    box-shadow:none;
+    color: black;
+  }
 
+*/
+  
 
   
 
   
    
+  .fab {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    margin-top: -50px;
+    right: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, .3);
+    color: #fff;
+    font-size: 30rspx;
+    line-height: 48px;
+    text-align: center;
+    background: #0066A2;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+  }
+  
+  .fab:hover {
+    cursor: pointer;
+
+  }
+
+  textarea {
+    resize: vertical;
+}
+
+

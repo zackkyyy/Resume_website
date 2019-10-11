@@ -1,6 +1,6 @@
 {
     "image" : "/stylesheets/edi.jpg",
-    "name"  : "my name here",
+    "name"  : "Zacky Kharboutli",
     "dateOfBirth" : "1990-01-24",
     "title": "Full Stack Java Developer",
     "contacts":{
@@ -18,6 +18,12 @@
 
     "skills": 
     [
+        {"name" :"Java" , "level" : "begginer "},
+        {"name" : "Java script", "level" : " expert"},
+        {"name" :"NodeJs" , "level" : "begginer "},
+        {"name" : "Back end", "level" : " expert"},
+        {"name" :"Databases" , "level" : "begginer "},
+        {"name" : "API", "level" : " expert"},
         {"name" :"Java" , "level" : "begginer "},
         {"name" : "Java script", "level" : " expert"},
         {"name" :"NodeJs" , "level" : "begginer "},
