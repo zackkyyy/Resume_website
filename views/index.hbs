@@ -18,18 +18,18 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-     <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
-     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+     <li class="nav-item"><a class="nav-link" data-toggle="collapse" data-target="#toggleOb"href="#">Summary</a></li>
+     <li class="nav-item"><a class="nav-link" data-toggle="collapse" data-target="#toggleSk"  href="#">Skills</a></li>
+     <li class="nav-item"><a class="nav-link" data-toggle="collapse" data-target="#toggleEx" href="#">Experience</a></li>
+     <li class="nav-item"><a class="nav-link" data-toggle="collapse" data-target="#toggleEd"   href="#">Education</a></li>
+     <li class="nav-item"><a class="nav-link" data-toggle="collapse" data-target="#togglePr" href="#">Projects</a></li>
     </ul>
   </div>
 </nav>
 <div class="row">
     <div class="col-sm-4" id="header">
         <header  >
-            <div class="containers" >
+            <div class="ColContainers" >
                 <p style="text-align: center"><img src="{{image}}" alt="Personal Image"
                         style="text-align: center"></p>
                 <nav class="contact">
@@ -72,9 +72,9 @@
 
 
                     </div>
-                </section> -->
+                </section> 
 
-                <a href="/"><i class="fa fa-chevron-up" style="position: fixed"></i></a>
+                <!-- <a href="/"><i class="fa fa-chevron-up" style="position: fixed"></i></a> -->
                
 
             </div>
@@ -90,11 +90,11 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-     <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
-     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-     <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+  <li class="nav-item"><a class="nav-link" data-toggle="collapse" data-target="#toggleOb"href="#">Summary</a></li>
+     <li class="nav-item"><a class="nav-link" data-toggle="collapse" data-target="#toggleSk"  href="#">Skills</a></li>
+     <li class="nav-item"><a class="nav-link" data-toggle="collapse" data-target="#toggleEx" href="#">Experience</a></li>
+     <li class="nav-item"><a class="nav-link" data-toggle="collapse" data-target="#toggleEd"   href="#">Education</a></li>
+     <li class="nav-item"><a class="nav-link" data-toggle="collapse" data-target="#togglePr" href="#">Projects</a></li>
     </ul>
   </div>
 </nav>
@@ -108,8 +108,8 @@
         <!-- Summary -->
         <section id="summary" class="section">
             <div class="containers">
-                <h4 class="h4"> <i class="fa fa-user-o"></i> Summary</h4>
-                <p>
+                <h4 class="h4" data-toggle="collapse" data-target="#toggleOb"> <i class="fa fa-user-o"></i> Summary</h4>
+                <p id="toggleOb">
                     {{objective}}
                 </p>
             </div>
@@ -120,8 +120,8 @@
         <!-- Skills -->
         <section id="skills" class="section Super light green overlay">
             <div class="containers">
-                <h4 class="h4"> <i class="fa fa-tasks"></i> Skills</h4>
-                <section>
+                <h4 class="h4" data-toggle="collapse" data-target="#toggleSk"> <i class="fa fa-tasks"></i> Skills</h4>
+                <section id="toggleSk">
                     {{#if skills}}
                     {{#each skills}}
                     <i> {{this.name }} &nbsp;&nbsp;</i>
@@ -136,10 +136,10 @@
         <section id="experience" class="section">
             <div class="containers">
                 
-                <h4 class="h4" data-toggle="collapse" data-target="#sss"> <i class="fa fa-suitcase"></i> Experience</h4>
+                <h4 class="h4" data-toggle="collapse" data-target="#toggleEx"> <i class="fa fa-suitcase"></i> Experience</h4>
                 {{#if experince}}
                 {{#each experince}}
-                <section class="job " id="sss">
+                <section class="job " id="toggleEx">
                     <h4>{{this.employer}} <span class="date">{{this.startDate}} - {{this.endDate}}</span></h4>
                     <span class="title">{{this.position}}</span>
                     <p><small> {{this.workDescription}} </small>
@@ -153,11 +153,11 @@
         <!-- Education -->
         <section id="education" class="section">
             <div class="containers">
-                <h4 class="h4">  <i class="fa fa-graduation-cap"></i>  Education</h4>
+                <h4 class="h4" data-toggle="collapse" data-target="#toggleEd">  <i class="fa fa-graduation-cap"></i>  Education</h4>
 
                 {{#if education}}
                 {{#each education}}
-                <section class="qualification">
+                <section class="qualification" id="toggleEd">
                     <h4>{{this.subject}} <span class="date">{{this.startDate}} - {{this.endDate}}</span></h4>
                     <p>{{this.university}}</p>
                 </section>
@@ -170,11 +170,11 @@
         <!-- Additional -->
          <section id="projects" class="section ">
             <div class="containers">
-                 <h4 class="h4">  <i class="fa fa-wrench"></i>  Projects</h4>
+                 <h4 class="h4" data-toggle="collapse" data-target="#togglePr">  <i class="fa fa-wrench"></i>  Projects</h4>
 
                 {{#if projects}}
                 {{#each projects}}
-                <section class="projects">
+                <section class="projects" id="togglePr">
                     <h4 >{{this.title}} <span class="date">{{this.data}}</span></h4>
                     <p>{{this.description}}</p>
                      <p style="font-weight: bold">Technologies used in the project :</p>

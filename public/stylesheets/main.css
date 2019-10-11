@@ -18,8 +18,14 @@ body {
     padding:0 2em;
 }
 
+.Colcontainer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding:0px 2%;
+}
+
 img{
-    max-width: 240px;
+    max-width: 70%;
 }
 
 
