@@ -38,6 +38,9 @@ fieldset {
 
     color:white;
     padding:4em 0;
+
+    position: fixed;
+    height: 100vh;
 }
 
 .name{
@@ -205,9 +208,15 @@ section a {
   }
   
 
+@media screen and (min-width : 0px) and (max-width :575px){
+    #header {
+        position: relative;
+    }
+}
+
 @media screen and (min-width : 0px) and (max-width :992px){
-      #naviDown{
-    display: none;
+    #naviDown{
+        display: none;
     }
 }
 

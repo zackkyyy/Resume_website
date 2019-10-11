@@ -1,28 +1,27 @@
 {
     "image" : "/stylesheets/edi.jpg",
-    "name"  : "Zacky Kharboutli",
-    "dateOfBirth" : "1990-01-24",
+    "name"  : "Lars Mikael Gustavsson",
+    "dateOfBirth" : "1985-03-07",
     "title": "Full Stack Java Developer",
     "contacts":{
-        "email" : "zacky-kh@hotmail.com" ,
-        "phoneNR ": 768654991
+        "email" : "lmtgustavsson@gmail.com" ,
+        "phoneNR ": 730246888
 },
 
-    "objective" :"TO OBTAIN PROFESSIONAL EXPERIENCE TO UTILIZE MY SKILLS AND KNOWLEDGE TO FURTHER DEVELOPE MY ABILITIES IN THE COMPUTER SCIENCE FIELD",
+    "objective" :"Hone my developer skills by coding at a company",
     "languages": 
     [
-        {"name" :"Swedish" , "level" : "Begginer"},
-        {"name" : "English", "level" :"Fluent "},
-        {"name" : "Arabic"  , "level": "Nativ"}
+        {"name" :"Swedish" , "level" : "Native"},
+        {"name" : "English", "level" :"Fluent "}
     ],
 
     "skills": 
     [
-        {"name" :"Java" , "level" : "begginer "},
-        {"name" : "Java script", "level" : " expert"},
-        {"name" :"NodeJs" , "level" : "begginer "},
+        {"name" : "Java" , "level" : "intermediate"},
+        {"name" : "Javascript", "level" : "expert"},
+        {"name" : "NodeJs" , "level" : "guru"},
         {"name" : "Back end", "level" : " expert"},
-        {"name" :"Databases" , "level" : "begginer "},
+        {"name" : "Databases" , "level" : "begginer "},
         {"name" : "API", "level" : " expert"},
         {"name" :"Java" , "level" : "begginer "},
         {"name" : "Java script", "level" : " expert"},
